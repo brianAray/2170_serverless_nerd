@@ -73,3 +73,8 @@ async function deleteUser(user_id){
 //         console.log(err);
 //     })
 
+module.exports = {
+    createUser,
+    getUser,
+    deleteUser
+}
