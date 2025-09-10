@@ -1,0 +1,8 @@
+2025-09-10T16:04:06.765Z [info]: Incoming GET : /
+2025-09-10T16:04:32.917Z [info]: Incoming POST : /users
+2025-09-10T16:04:33.373Z [info]: PUT command to databse complete {"$metadata":{"httpStatusCode":200,"requestId":"MJ8AA10FBDJ78GNQMAAB8B322BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-10T16:04:33.374Z [info]: Creating new user: {"$metadata":{"httpStatusCode":200,"requestId":"MJ8AA10FBDJ78GNQMAAB8B322BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-10T16:09:38.323Z [info]: Incoming POST : /users/login
+2025-09-10T16:09:38.625Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"6QDQUE5940LQE15C2RQR2055A3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"7fb0334a-5369-4973-b88a-084437160666","password":"$2b$10$.jUE4.IIphBUfHSWDrbvsOKTMg0NikoZleoz4fq6b1KOrssWiOAWe","username":"user1"}],"ScannedCount":1}
+2025-09-10T16:09:38.626Z [info]: User found by username: {"user_id":"7fb0334a-5369-4973-b88a-084437160666","password":"$2b$10$.jUE4.IIphBUfHSWDrbvsOKTMg0NikoZleoz4fq6b1KOrssWiOAWe","username":"user1"}
+2025-09-10T16:09:38.716Z [info]: User logged in successfully
