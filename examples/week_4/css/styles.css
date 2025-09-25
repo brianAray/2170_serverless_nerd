@@ -1,0 +1,145 @@
+/*
+    External stylesheets allow you to centralize your styles and apply them consistently.
+
+    They are recommended to use for web development
+*/
+
+body {
+    background-color: rgb(221, 147, 147);
+}
+
+/*
+    Box Model
+
+    content
+        - The innermost area of an elements box where the content exists
+        - Can be text, images, etc
+
+    Padding
+        - The space between teh content and the elements border
+        - padding-top, padding-right, padding-bottom, and padding-left
+        - You can also use padding and add in all the sides at once
+
+    Border
+        - The border surrounds teh padding and content area
+        - Can be styled with border-width, border-style, and border-color
+    
+    Margin
+        - The margin is the outermost area of an elements box, creating space around it
+        - We reference margin-top, margin-right, margin-bottom, and margin-left
+        - You can also do the same as padding and just reference all of it at once with margin
+
+*/
+
+#box {
+    width: 200px; /* width of content area */
+    height: 100px;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 10px
+}
+
+/*
+    CSS Selectors
+
+    They are used to target and style specific HTML elements based on their element type or tag
+    
+    They apply syles to all instances of the selected element throughout the html doc
+
+    Element Selectors
+    Element selectors are the most basic and widely used
+
+*/
+
+h1 {
+    font-family: Arial
+}
+
+/*
+    Class or ID selector
+
+    We are using the class or id attribute of elements in order to apply styles to them
+
+    Id is used to select a unique element
+    Class is used to apply styles to a group of elements
+*/
+
+.class_example {
+    background-color: blueviolet;
+}
+
+#box {
+    background-color: coral;
+}
+
+/*
+    Siblings selector
+    Grab adjacent siblings using +
+
+    Select and style the LI element immediately following the once with class "highlight"
+
+    General sibling selector ~
+    Select and style all elements following the one with class "highlight"
+*/
+
+.highlight + li {
+    background-color: yellow;
+}
+
+.highlight ~ li {
+    color: blue
+}
+
+/*
+    Advanced Selectors
+
+    Attribute selectors
+        - You can select elements based on their attributes and attribute values
+
+        element[attribute=value]
+
+*/
+
+input[type="text"] {
+    border: 3px solid #ff0000;
+}
+
+/*
+    Pseudo Classes
+
+    :hover
+    :focus
+
+    These pseudo-classes allow you to style elements when they are hovered or focused on
+
+*/
+
+input:hover {
+    background-color: red;
+}
+
+input:focus {
+    border: 3px dashed blue;
+}
+
+/*
+    Responsive Web Design
+
+    This is the idea that web screens are nearly always different between different users based on what device they are using to interact with your website
+
+    In modern web dev, you need to account for mobile devices as well as browsers. In fact, most of the internets web traffic comes from phones.
+
+    You should approach your website from a mobile first perspective.
+
+    Media Queries
+    Media queries are CSS rules that apply styles based ont he characteristics of the device, such as screen width, height, or orientation
+
+*/
+
+@media (max-width: 768px){
+    /* CSS Styles for tablet screens */
+
+    body {
+        background-color: blue;
+    }
+}
