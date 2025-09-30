@@ -1,4 +1,4 @@
-let age: number = 30;
+let age: number = 20;
 let firstName: string = "Mike";
 let isStudent: boolean = true;
 

@@ -56,4 +56,10 @@ var MyClass = /** @class */ (function () {
     return MyClass;
 }());
 var myClass = new MyClass();
-myClass.greet("Mike");
+// myClass.greet("Mike");
+/*
+    This is used for a variety of things, especially if you were creating your own packages to be used on NPM
+    Additonal logging, validation, modifying the behavior of classes and their members
+    Typically used inside libraries and frameworks like Angular for feature like dependency injection and route handling
+
+*/ 

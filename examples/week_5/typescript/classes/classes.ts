@@ -13,7 +13,6 @@ class PersonClass {
         this.age = age;
     }
 
-
     // method
     sayHello() {
         console.log(`My name is ${this.firstName} and I am ${this.age} years old`);

@@ -1,3 +1,19 @@
+var GenericStack = /** @class */ (function () {
+    function GenericStack() {
+        this.items = [];
+    }
+    GenericStack.prototype.push = function (item) {
+        this.items.push(item);
+    };
+    GenericStack.prototype.pop = function () {
+        return this.items.pop();
+    };
+    return GenericStack;
+}());
+var genericStack = new GenericStack();
+genericStack.push("hello");
+genericStack.push(3);
+console.log(genericStack);
 var NumberStack = /** @class */ (function () {
     function NumberStack() {
         this.items = [];

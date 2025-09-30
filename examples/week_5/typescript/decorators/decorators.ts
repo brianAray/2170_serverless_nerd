@@ -51,7 +51,7 @@ class MyClass {
 }
 
 const myClass = new MyClass();
-myClass.greet("Mike");
+// myClass.greet("Mike");
 
 /*
     This is used for a variety of things, especially if you were creating your own packages to be used on NPM

@@ -3,6 +3,25 @@ interface Stack<T> {
     pop(): T | undefined;
 }
 
+class GenericStack<T> {
+
+    private items: T[] = [];
+    
+    push(item: T): void {
+        this.items.push(item);
+    }
+    pop(): T | undefined {
+        return this.items.pop();
+    }
+}
+
+let genericStack = new GenericStack();
+
+genericStack.push("hello");
+genericStack.push(3);
+
+console.log(genericStack);
+
 class NumberStack implements Stack<number> {
     
     private items: number[] = [];
