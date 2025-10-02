@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import type { User } from "../../App";
+import { UserContext } from "../useEffect/context";
 
 function NavBar() {
+
+    const user: User | undefined = useContext(UserContext);
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -31,6 +35,21 @@ function NavBar() {
                   Props
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/hooks">
+                  Hooks
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/poke">
+                  PokeDemo
+                </Link>
+              </li>
+
+              <li>
+                Username: {user && user.name}
+              </li>
+
             </ul>
           </div>
         </div>
