@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import type { Pokemon } from "./Pokemon";
 import axios from "axios";
 
 function PokeDemo() {
 
-    let [pokemon, setPokemon] = useState<Pokemon>({} as Pokemon);
+    let [pokemon] = useState<Pokemon>({} as Pokemon);
 
 //   useEffect(() => {
 //     async function getDitto() {

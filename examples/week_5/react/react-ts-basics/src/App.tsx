@@ -34,7 +34,7 @@ function App() {
     return Promise.reject(error);
   })
 
-  const [user, setUser] = useState<User>({
+  const [user] = useState<User>({
     isSubscribed: true,
     name: 'Revature'
   })

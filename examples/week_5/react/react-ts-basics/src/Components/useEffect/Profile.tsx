@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import type { User } from '../../App'
 import { UserContext } from './context';
 
